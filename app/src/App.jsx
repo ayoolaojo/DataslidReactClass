@@ -18,6 +18,7 @@ import Greetings from './components/Greetings'
 import React from 'react'
 import Button from './components/Button'
 import Counter from './components/Counter'
+import LikeButton from './components/LikeButton'
 
 const SkillBadge =({skill})=> {
   return (
@@ -79,7 +80,7 @@ function App() {
 the image , Ayoola — Aspiring React Developer
 Then use it in App.jsx at least 10 times with different images / names/roles, so you can see it's reusable. (Tip: you can destructure props directly in the function parameters like function ProfileCard({ name, role }) instead of writing props.name — try it either way, whichever makes sense to you first.)</span> */}
     
-
+      <LikeButton/>
      <Greetings name = 'Ayoola'  country = 'Nigeria'/>
     <Greetings name = 'Ayesha'  country = ' Canada'/>
     <Greetings   country = 'United Kingdom'/>
