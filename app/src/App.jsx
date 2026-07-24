@@ -19,6 +19,7 @@ import React from 'react'
 import Button from './components/Button'
 import Counter from './components/Counter'
 import LikeButton from './components/LikeButton'
+import NewCounter from './components/newCounter'
 
 const SkillBadge =({skill})=> {
   return (
@@ -76,10 +77,11 @@ function App() {
     <> 
       
     <h1>Hello World</h1> 
+     
       {/* <span> create a component called ProfileCard that accepts three props: name, imageUrl and role. It should render something like:
 the image , Ayoola — Aspiring React Developer
 Then use it in App.jsx at least 10 times with different images / names/roles, so you can see it's reusable. (Tip: you can destructure props directly in the function parameters like function ProfileCard({ name, role }) instead of writing props.name — try it either way, whichever makes sense to you first.)</span> */}
-    
+      <NewCounter/>
       <LikeButton/>
      <Greetings name = 'Ayoola'  country = 'Nigeria'/>
     <Greetings name = 'Ayesha'  country = ' Canada'/>
