@@ -22,6 +22,7 @@ import LikeButton from './components/LikeButton'
 import NewCounter from './components/newCounter'
 import DataSlid from './components/DataSlid'
 import Posts from './components/Posts'
+import Users from './components/Users'
 
 const SkillBadge =({skill})=> {
   return (
@@ -67,7 +68,7 @@ function App() {
 
     const fruits = ['apple', 'banana', 'orange', 'grape']
 
-
+ 
     const {name, age, country, city} = Person
     const [first,second, third, fourth] = fruits
 
@@ -95,7 +96,8 @@ Then use it in App.jsx at least 10 times with different images / names/roles, so
     <Button text='Register Now'/>
     <Button bRadius = '5px'  text='Dataslid'  />
     <Counter/> */}
-    <Posts/>
+    {/* <Posts/> */}
+    <Users/>
 
     
      
