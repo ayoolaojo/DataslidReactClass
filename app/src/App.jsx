@@ -23,6 +23,8 @@ import NewCounter from './components/newCounter'
 import DataSlid from './components/DataSlid'
 import Posts from './components/Posts'
 import Users from './components/Users'
+import Todos from './components/Todos'
+import Products from './components/Products'
 
 const SkillBadge =({skill})=> {
   return (
@@ -97,7 +99,13 @@ Then use it in App.jsx at least 10 times with different images / names/roles, so
     <Button bRadius = '5px'  text='Dataslid'  />
     <Counter/> */}
     {/* <Posts/> */}
-    <Users/>
+    {/* <Users/>
+    <Posts/> */}
+        
+
+        {/* <CharacterExplorer/> */}
+        {/* <Todos/> */}
+        <Products/>
 
     
      
