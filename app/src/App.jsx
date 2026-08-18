@@ -25,6 +25,13 @@ import Posts from './components/Posts'
 import Users from './components/Users'
 import Todos from './components/Todos'
 import Products from './components/Products'
+import Comments from './components/Comments'
+import {Link,Routes, Route}  from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Contacts from './components/Contacts'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const SkillBadge =({skill})=> {
   return (
@@ -105,7 +112,8 @@ Then use it in App.jsx at least 10 times with different images / names/roles, so
 
         {/* <CharacterExplorer/> */}
         {/* <Todos/> */}
-        <Products/>
+        {/* <Products/> */}
+        {/* <Comments/> */}
 
     
      
@@ -121,7 +129,24 @@ Then use it in App.jsx at least 10 times with different images / names/roles, so
           />
            
         ))
-     } */}
+     } */}  
+
+     <Navbar/> 
+       <main></main>
+       <Footer/>
+
+
+        
+
+
+
+        <Routes>
+           <Route path='/' element= {<Home/>}/>
+           <Route path='/about' element= {<About/>}/>
+           <Route path='/contact' element= {<Contacts/>}/>
+           <Route path='/products' element= {<Products/>}/>
+        </Routes>
+            
     
     
           
